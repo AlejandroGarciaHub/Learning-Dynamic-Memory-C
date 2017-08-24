@@ -9,10 +9,30 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>2-Calloc.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>3-Realloc.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>49A7504A1F4CE18600D894C8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>49A750581F4CE19A00D894C8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>49A750631F4CE2C400D894C8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

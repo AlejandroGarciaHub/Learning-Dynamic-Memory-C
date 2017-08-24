@@ -8,10 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		49A7504F1F4CE18600D894C8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 49A7504E1F4CE18600D894C8 /* main.c */; };
+		49A7505C1F4CE19A00D894C8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 49A7505B1F4CE19A00D894C8 /* main.c */; };
+		49A750671F4CE2C400D894C8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 49A750661F4CE2C400D894C8 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		49A750491F4CE18600D894C8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		49A750571F4CE19A00D894C8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		49A750621F4CE2C400D894C8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +45,28 @@
 /* Begin PBXFileReference section */
 		49A7504B1F4CE18600D894C8 /* 1-Malloc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1-Malloc"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A7504E1F4CE18600D894C8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		49A750591F4CE19A00D894C8 /* 2-Calloc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "2-Calloc"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A7505B1F4CE19A00D894C8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		49A750641F4CE2C400D894C8 /* 3-Realloc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "3-Realloc"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A750661F4CE2C400D894C8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		49A750481F4CE18600D894C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A750561F4CE19A00D894C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A750611F4CE2C400D894C8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				49A7504D1F4CE18600D894C8 /* 1-Malloc */,
+				49A7505A1F4CE19A00D894C8 /* 2-Calloc */,
+				49A750651F4CE2C400D894C8 /* 3-Realloc */,
 				49A7504C1F4CE18600D894C8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				49A7504B1F4CE18600D894C8 /* 1-Malloc */,
+				49A750591F4CE19A00D894C8 /* 2-Calloc */,
+				49A750641F4CE2C400D894C8 /* 3-Realloc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +102,22 @@
 				49A7504E1F4CE18600D894C8 /* main.c */,
 			);
 			path = "1-Malloc";
+			sourceTree = "<group>";
+		};
+		49A7505A1F4CE19A00D894C8 /* 2-Calloc */ = {
+			isa = PBXGroup;
+			children = (
+				49A7505B1F4CE19A00D894C8 /* main.c */,
+			);
+			path = "2-Calloc";
+			sourceTree = "<group>";
+		};
+		49A750651F4CE2C400D894C8 /* 3-Realloc */ = {
+			isa = PBXGroup;
+			children = (
+				49A750661F4CE2C400D894C8 /* main.c */,
+			);
+			path = "3-Realloc";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +140,40 @@
 			productReference = 49A7504B1F4CE18600D894C8 /* 1-Malloc */;
 			productType = "com.apple.product-type.tool";
 		};
+		49A750581F4CE19A00D894C8 /* 2-Calloc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49A7505D1F4CE19A00D894C8 /* Build configuration list for PBXNativeTarget "2-Calloc" */;
+			buildPhases = (
+				49A750551F4CE19A00D894C8 /* Sources */,
+				49A750561F4CE19A00D894C8 /* Frameworks */,
+				49A750571F4CE19A00D894C8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "2-Calloc";
+			productName = "2-Calloc";
+			productReference = 49A750591F4CE19A00D894C8 /* 2-Calloc */;
+			productType = "com.apple.product-type.tool";
+		};
+		49A750631F4CE2C400D894C8 /* 3-Realloc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49A750681F4CE2C400D894C8 /* Build configuration list for PBXNativeTarget "3-Realloc" */;
+			buildPhases = (
+				49A750601F4CE2C400D894C8 /* Sources */,
+				49A750611F4CE2C400D894C8 /* Frameworks */,
+				49A750621F4CE2C400D894C8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "3-Realloc";
+			productName = "3-Realloc";
+			productReference = 49A750641F4CE2C400D894C8 /* 3-Realloc */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +184,14 @@
 				ORGANIZATIONNAME = "Miguel Garcia";
 				TargetAttributes = {
 					49A7504A1F4CE18600D894C8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					49A750581F4CE19A00D894C8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					49A750631F4CE2C400D894C8 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
@@ -110,6 +210,8 @@
 			projectRoot = "";
 			targets = (
 				49A7504A1F4CE18600D894C8 /* 1-Malloc */,
+				49A750581F4CE19A00D894C8 /* 2-Calloc */,
+				49A750631F4CE2C400D894C8 /* 3-Realloc */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +222,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A7504F1F4CE18600D894C8 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A750551F4CE19A00D894C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A7505C1F4CE19A00D894C8 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A750601F4CE2C400D894C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A750671F4CE2C400D894C8 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +347,34 @@
 			};
 			name = Release;
 		};
+		49A7505E1F4CE19A00D894C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49A7505F1F4CE19A00D894C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		49A750691F4CE2C400D894C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49A7506A1F4CE2C400D894C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -246,6 +392,22 @@
 			buildConfigurations = (
 				49A750531F4CE18600D894C8 /* Debug */,
 				49A750541F4CE18600D894C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49A7505D1F4CE19A00D894C8 /* Build configuration list for PBXNativeTarget "2-Calloc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A7505E1F4CE19A00D894C8 /* Debug */,
+				49A7505F1F4CE19A00D894C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49A750681F4CE2C400D894C8 /* Build configuration list for PBXNativeTarget "3-Realloc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A750691F4CE2C400D894C8 /* Debug */,
+				49A7506A1F4CE2C400D894C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
